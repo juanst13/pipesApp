@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'products-basics-page',
+  selector: 'app-basics-page',
   templateUrl: './basics-page.component.html',
-  styleUrl: './basics-page.component.css',
+  styleUrls: ['./basics-page.component.css']
 })
 export class BasicsPageComponent {
 
   public nameLower: string = 'juan david';
   public nameUpper: string = 'JUAN DAVID';
-  public fullName: string = 'jUaN DAvId gIl';
+  public fullName: string = 'jUAn GiL';
+
+  public customDate: Date = new Date();
 
 }
